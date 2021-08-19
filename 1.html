@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Задача 1</title>
+	
+</head>
+<body>
+	<img src="img/1.jpg">
+	<img src="img/2.jpg">
+	<img src="img/3.jpg">
+	<script>
+
+//Даны картинки. Привяжите к каждой картинке событие, чтобы по клику на картинку алертом выводился ее src. Показать решение.*/
+const elem = document.querySelectorAll('img');
+elem.forEach(item =>{
+	item.addEventListener('click',(event)=>{
+	console.log(event.target.getAttribute('src'))
+})
+})
+
+
+
+
+
+	</script>
+</body>
+</html>
